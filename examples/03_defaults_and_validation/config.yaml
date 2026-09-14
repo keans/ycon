@@ -1,0 +1,3 @@
+# Only override what differs from defaults.yaml.
+database:
+  host: production-db.internal

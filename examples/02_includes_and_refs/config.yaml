@@ -1,0 +1,7 @@
+database: !include db_settings.yaml
+
+# !ref reaches into the included content, after it's been expanded.
+connection_string: !ref database.host
+
+# !include env:// reads an environment variable at load time.
+api_key: !include env://YCON_EXAMPLE_API_KEY

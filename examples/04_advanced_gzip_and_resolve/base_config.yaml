@@ -1,0 +1,11 @@
+# NOTE: !ref paths always resolve against the final top-level
+# document, not against this file's own root — since config.yaml
+# !includes this file under the "base" key, refs here must be
+# written as "base.regions.primary", not just "regions.primary".
+service:
+  name: analytics-worker
+  region: !ref base.regions.primary
+
+regions:
+  primary: eu-central-1
+  fallback: !ref base.regions.primary

@@ -1,0 +1,3 @@
+app_name: demo-service
+debug: false
+port: 8080
